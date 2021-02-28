@@ -51,7 +51,7 @@ Intel:
 sudo grubby --update-kernel=ALL --args="intel=on rd.driver.pre=vfio-pc"
 ```
 
-## Inital Ramdisk
+## Initial Ramdisk
 Create the file `/usr/sbin/vfio-pci-override.sh` and place the following inside. Modify the `DEVS=` line for your setup. Make sure to use the correct PCIe device prefix, mine is `0000`.
 ```sh
 #!/bin/sh
