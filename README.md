@@ -70,7 +70,7 @@ Change the permissions with:
 sudo chmod 755 /usr/sbin/vfio-pci-override.sh
 ```
 
-Next create the a directory and below:
+Next create the directory below:
 ```sh
 sudo mkdir /usr/lib/dracut/modules.d/20vfio
 ```
