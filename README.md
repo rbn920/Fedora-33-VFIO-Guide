@@ -44,11 +44,11 @@ sudo usermod -a -G libvirt YOUR_USERNAME
 ## Configure Grub
 AMD:
 ```sh
-sudo grubby --update-kernel=ALL --args="amd_iommu=on rd.driver.pre=vfio-pc"
+sudo grubby --update-kernel=ALL --args="amd_iommu=on rd.driver.pre=vfio-pci"
 ```
 Intel:
 ```sh
-sudo grubby --update-kernel=ALL --args="intel=on rd.driver.pre=vfio-pc"
+sudo grubby --update-kernel=ALL --args="intel=on rd.driver.pre=vfio-pci"
 ```
 
 ## Initial Ramdisk
