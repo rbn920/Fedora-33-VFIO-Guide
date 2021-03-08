@@ -72,10 +72,10 @@ sudo chmod 755 /usr/sbin/vfio-pci-override.sh
 
 Next create the directory below:
 ```sh
-sudo mkdir /usr/lib/dracut/modules.d/20vfio
+sudo mkdir /usr/lib/dracut/modules.d/30vfio
 ```
 
-Create the file `/usr/lib/dracut/modules.d/20vfio/module-setup.sh` and place the following inside:
+Create the file `/usr/lib/dracut/modules.d/30vfio/module-setup.sh` and place the following inside:
 ```sh
 #!/usr/bin/bash
 check() {
@@ -92,12 +92,12 @@ install() {
 
 and change the permissions:
 ```sh
-sudo chmod 755 /usr/lib/dracut/modules.d/20vfio/module-setup.sh
+sudo chmod 755 /usr/lib/dracut/modules.d/30vfio/module-setup.sh
 ```
 
 Create a symbolic linkto the `vfio-pci-override.sh` script we created earlier:
 ```sh
-sudo ln -s /usr/sbin/vfio-pci-override.sh /usr/lib/dracut/modules.d/20vfio/vfio-pci-override.sh
+sudo ln -s /usr/sbin/vfio-pci-override.sh /usr/lib/dracut/modules.d/30vfio/vfio-pci-override.sh
 ```
 
 Create the file `/etc/dracut.conf.d/vfio.conf` and add the following:
