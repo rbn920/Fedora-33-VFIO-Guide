@@ -114,7 +114,6 @@ sudo dracut -fv
 
 If you run `sudo lsinitrd | grep vfio` you should see something similar to below:
 ```sh
-etc/modprobe.d/vfio.conf
 usr/lib/dracut/hooks/pre-udev/00-vfio-pci-override.sh -> ../../../../sbin/vfio-pci-override.sh
 usr/lib/modules/5.10.18-200.fc33.x86_64/kernel/drivers/vfio
 usr/lib/modules/5.10.18-200.fc33.x86_64/kernel/drivers/vfio/pci
