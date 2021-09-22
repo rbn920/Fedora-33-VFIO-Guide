@@ -142,7 +142,7 @@ lspci -nnv
 	.
 	Kernel driver in use: vfio-pci
 	Kernel modules: amdgpu
-3:00.1 Audio device [0403]: Advanced Micro Devices, Inc. [AMD/ATI] Vega 10 HDMI Audio [Radeon Vega 56/64] [1002:aaf8]
+33:00.1 Audio device [0403]: Advanced Micro Devices, Inc. [AMD/ATI] Vega 10 HDMI Audio [Radeon Vega 56/64] [1002:aaf8]
 	.
 	.
 	.
